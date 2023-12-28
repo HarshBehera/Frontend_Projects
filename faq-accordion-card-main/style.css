@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 800px;
+    width: 1440px;
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: white;
+    height: 540px;
+    width: 900px;
+    border-radius: 28px;
+}

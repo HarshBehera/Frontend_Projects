@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+
+}
+
+.container{
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    display: block;
+    height: 460px;
+    width: 600px;
+    box-shadow: 10px 10px 10px rgb(255, 221, 221);
+}
+.community{
+    width: 100%;
+    height: 200px;
+}
+.container .community h2{
+    margin-top: 38px;
+    margin-left: 35px;
+    color:hsl(179, 62%, 43%);
+}
+h3{
+    margin-top: 22px;
+    margin-left: 35px;
+    color: hsl(71, 73%, 54%);
+}
+p{
+    margin: 20px 35px;
+    color: hsl(218, 22%, 67%);
+    line-height: 27px;
+}
+.subscription{
+    
+    display: flex;
+}
+.box1{
+    background-color: hsl(179, 62%, 43%);
+    width: 300px;
+    height: 260px;
+    border-radius: 0 0 0 10px;
+    
+
+
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    margin-right: 90px;
+    align-items: center;
+}
+
+.container .subscription .box1 h3{
+    color: white;
+    font-weight: 400;
+    margin-top: 45px;
+}
+.container .subscription .box1 p{
+    color: white;
+    margin-top: 15px;
+    margin-right: 70px;
+    font-size: small;
+    font-weight: 200;
+    line-height: 22px;
+}
+
+.box2{
+    background-color:hsl(218, 22%, 67%);
+    width: 300px;
+    height: 260px;
+    border-radius: 0 0 10px 0 ;
+
+}
+.container .subscription .box2 h3{
+    color: white;
+    font-weight: 400;
+    margin-top: 45px;
+}
+.container .subscription .box2 p{
+    color: white;
+    margin-top: 15px;
+    margin-right: 70px;
+    font-size: small;
+    font-weight: 200;
+    line-height: 22px;
+}
+button{
+    margin-left: 35px;
+    padding: 10px 80px;
+    box-shadow: 7px 7px 7px rgb(153, 124, 124);
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+

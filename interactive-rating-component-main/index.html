@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <div class="container">
+    <form action="none"></form>
+    <div class="circle"><img src="images/icon-star.svg" alt=""></div>
+    <p class="head">How did we do?</p>
+    <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    <div class="bar">
+      <div class="circle" id="circle1" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="mouseClick(this)" >1</div>
+      <div class="circle" id="circle2" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="mouseClick(this)" style="margin-left: 25px;">2</div>
+      <div class="circle" id="circle3" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="mouseClick(this)" style="margin-left: 25px;">3</div>
+      <div class="circle" id="circle4" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="mouseClick(this)" style="margin-left: 25px;">4</div>
+      <div class="circle" id="circle5" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="mouseClick(this)" style="margin-left: 25px;">5</div>
+    </div>
+    <button onmouseover="mouseOverBtn(this)" onmouseout="mouseOutBtn(this)" onclick="buttonClick(this)">SUBMIT</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
