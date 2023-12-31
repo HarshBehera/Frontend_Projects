@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+*{
+    /* margin: 0;
+    padding: 0; */
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    background: left -20% / 15% 60% url(assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    background-color: hsl(275, 100%, 97%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.container{
+    background-color: white;
+    /* height: 500px; */
+    width: 450px;
+    border-radius: 10px;
+    padding: 30px;
+}   
+.head{
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+.accordian-btn{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background: none;
+    border: none;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.accordian-btn:hover{
+    color: purple;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+}
+.accordian-container .accordian-item:not(:last-child){
+    border-bottom: 2px solid hsl(275, 100%, 97%);
+}
+
+.accordian-item .icons img{
+    min-width: 30px;
+}
+
+.accordian-item .icons .minus-icon{
+    display: none;
+}
+
+.accordian-description{
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 200ms ease;
+}
+
+.accordian-description p{
+    color: hsl(292, 16%, 49%);
+    padding: 1.5rem 0;
+}
+
+@media (max-width: 540px){
+    body{
+        background-image: url(assets/images/background-pattern-mobile.svg);
+    }
+}
