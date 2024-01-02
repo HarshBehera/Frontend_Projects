@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
 body{
-    height: 800px;
-    width: 1440px;
     background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,4 +62,37 @@ button{
     border: none;
     border-radius: 20px;
     letter-spacing: 2px;
+}
+
+.selected{
+    color: hsl(25, 97%, 53%);
+    /* border: 1px solid hsl(25, 97%, 53%); */
+    border-radius: 13px;
+    padding: 3px 10px;
+    background-color: hsl(213, 19%, 18%);
+    margin-bottom: 10px;
+    
+}
+
+h1{
+    font-size: 28px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+.thanks-text{
+    margin-top: 0px;
+}
+img{
+    /* width: 100%; */
+    padding: 40px;
+   
+}
+.card-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.hide{
+    display: none;
 }

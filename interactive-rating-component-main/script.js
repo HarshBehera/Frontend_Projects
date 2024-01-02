@@ -1,4 +1,6 @@
-
+const card_1 = document.querySelector(".card-1")
+const card_2 = document.querySelector(".card-2")
+const selected= document.querySelector(".selected");
 const circle1 = document.getElementById("circle1")
 const circle2 = document.getElementById("circle2")
 const circle3 = document.getElementById("circle3")
@@ -48,7 +50,27 @@ function mouseOverBtn(btn){
     btn.style.backgroundColor="hsl(25, 97%, 53%)"
  }
 function buttonClick(btn){
-    console.log("working")
+    card_1.classList.add("hide");
+    card_2.classList.remove("hide");
+    let x=0;
+    // console.log(circle1.style.backgroundColor)
+    if(circle1.style.backgroundColor === "rgb(149, 158, 172)"){
+        x=1;
+    }
+    else if(circle2.style.backgroundColor === "rgb(149, 158, 172)"){
+        x=2;
+    }
+    else if(circle3.style.backgroundColor === "rgb(149, 158, 172)"){
+        x=3;
+    }
+    else if(circle4.style.backgroundColor === "rgb(149, 158, 172)"){
+        x=4;
+    }
+    else if(circle5.style.backgroundColor === "rgb(149, 158, 172)"){
+        x=5;
+    }
+    selected.innerHTML="You selected "+x+" out of 5"
+    // console.log("working"+"  "+x)
 }
 
 
