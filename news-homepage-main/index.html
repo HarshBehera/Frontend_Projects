@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,46 +15,102 @@
   </style>
 </head>
 <body>
+  <main>
+    <div class="navbar">
+      <img src="assets/images/logo.svg" alt="" >
+      <nav>
+        <button id="menu-close">
+          <img src="./assets/images/icon-menu-close.svg" alt="">
+        </button>
+        <ul>
+          <a href="">Home</a>
+          <a href="">New</a>
+          <a href="">Popular</a>
+          <a href="">Trending</a>
+          <a href="">Categories</a>
+        </ul>
+      </nav>
+      <div class="menu-button">
+        <button 
+        id="menu-button">
+          <img src="./assets/images/icon-menu.svg" alt="">
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="column1">
+        <div class="box1">
+          <img src="assets/images/image-web-3-desktop.jpg" alt="">
+          <div class="box1-3">
+            <div class="box1-1">
+              <h1>The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="box1-2">
+              <h5>
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?
+              </h5>
+              <button class="btn">
+                READ MORE
+              </button>
+            </div>
+          </div>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
-
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
+        </div>
+        <div class="box2">
+          <h2>New</h2>
+          <div class="box2-1">
+            <h4 class="btn-1">Hydrogen VS Electric Cars</h4>
+            <h5>Will hydrogen-fueled cars ever catch up to EVs?</h5>
+          </div>
+          <div class="box2-1">
+            <h4 class="btn-1">The Downsides of AI Artistry</h4>
+            <h5>What are the possible adverse effects of on-demand AI image generation?</h5>
+          </div>
+          <div class="box2-1">
+            <h4 class="btn-1">Is VC Funding Drying Up?</h4>
+            <h5>Private funding by VC firms is down 50% YOY. We take a look at what that means.</h5>
+          </div>
+        </div>
+      </div>
+      <div class="column2">
+        <div class="column2-box">
+          <div class="column2-img">
+            <img src="assets/images/image-retro-pcs.jpg" alt="">
+          </div>
+          <div class="column2-rest">
+            <h3>01</h3>
+            <h4 class="btn-1">Reviving Retro PCs</h4>
+            <h5>What happens when old PCs are given modern upgrades?</h5>
+          </div>
+        </div>
+        <div class="column2-box">
+          <div class="column2-img">
+            <img src="assets/images/image-top-laptops.jpg" alt="">
+          </div>
+          <div class="column2-rest">
+            <h3>02</h3>
+            <h4 class="btn-1">Top 10 Laptops of 2022</h4>
+            <h5>Our best picks for various needs and budgets.</h5>
+          </div>
+        </div>
+        <div class="column2-box">
+          <div class="column2-img">
+            <img src="assets/images/image-gaming-growth.jpg" alt="">
+          </div>
+          <div class="column2-rest">
+            <h3>03</h3>
+            <h4 class="btn-1">The Growth of Gaming</h4>
+            <h5>How the pandemic has sparked fresh opportunities.</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Harshbardhan behera</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
