@@ -1,4 +1,5 @@
 const contents=document.querySelectorAll(".content");
+const unread = document.querySelector(".unread-nos");
 function markAllRead(){
     for(let i=0;i<contents.length;i++){
         let element=contents[i];
@@ -6,4 +7,7 @@ function markAllRead(){
             element.classList.remove("not-read");
         }
     }
+    unread.innerHTML="";
+    unread.classList.remove("unread-nos");
+    
 }
